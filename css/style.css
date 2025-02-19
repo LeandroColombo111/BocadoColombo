@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para el menú */
+#menu {
+    width: 100%;
+    background-color: #5a3d3d; /* Color cálido similar al sándwich */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 2px -2px gray;
+    
+}
+
+#menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para el menú lateral */
+#sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sideMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#sideMenu a:hover {
+    color: #f1f1f1;
+}
+
+/* Contenido principal */
+#mainContent {
+    padding: 100px 20px;  /* Agregado para que no se superponga con el menú */
+    text-align: center;
+    background-image: url('../images/background.jpg'); /* Cambia esta ruta por la correcta */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Para mejorar la visibilidad del texto */
+}
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 24px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Estilos para el icono del menú */
+#menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
